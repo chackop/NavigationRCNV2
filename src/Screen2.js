@@ -1,23 +1,18 @@
-import React from 'react'
-import {
-  View,
-  Text,
-  Button,
-  StyleSheet,
-} from 'react-native'
-import { goToAuth } from './navigation'
-import { Auth } from 'aws-amplify'
-import {Navigation} from 'react-native-navigation';
+import React from "react";
+import { View, Text, Button, StyleSheet } from "react-native";
+import { goToAuth } from "./navigation";
+import { Auth } from "aws-amplify";
+import { Navigation } from "react-native-navigation";
 
-import { USER_KEY } from './config'
+import { USER_KEY } from "./config";
 
 export default class Screen2 extends React.Component {
   static get options() {
     return {
       topBar: {
         title: {
-          text: 'Screen 2'
-        },
+          text: "Screen 2"
+        }
       }
     };
   }
@@ -30,14 +25,14 @@ export default class Screen2 extends React.Component {
           title="Go Back"
         />
       </View>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: "center",
+    alignItems: "center"
   }
-})
+});
